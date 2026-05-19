@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Murage | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <canvas id="splash-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">DM<span>.</span></a>
+            <div class="nav-right-wrapper">
+                <div class="nav-links" id="nav-links">
+                    <a href="#hero" class="nav-item active">Home</a>
+                    <a href="#about" class="nav-item">About</a>
+                    <a href="#experience" class="nav-item">Experience</a>
+                    <a href="#blog" class="nav-item">Blog</a>
+                    <a href="#contact" class="nav-item">Contact</a>
+                    <a href="assets/Dennis-Resume-Software-Engineer.pdf" target="_blank"
+                        download="Dennis-Resume-Software-Engineer.pdf" class="nav-item nav-btn">
+                        Resume <i class="fa-solid fa-download" style="font-size: 0.8rem; margin-left: 4px;"></i>
+                    </a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section target-section">
+        <div class="hero-content reveal">
+            <span class="badge">Available for Opportunities</span>
+            <h1>Building Next-Gen <br><span class="text-gradient">Cloud Architecture</span></h1>
+            <p class="hero-lead">Hi, I'm Dennis Murage. I specialize in designing, scaling, and securing
+                high-performance cloud ecosystems and Kubernetes infrastructure.</p>
+
+            <div class="tech-badges">
+                <span class="tech-badge"><i class="fa-brands fa-fort-awesome"></i> Kubernetes</span>
+                <span class="tech-badge"><i class="fa-brands fa-aws"></i> AWS</span>
+                <span class="tech-badge"><i class="fa-brands fa-google"></i> GCP</span>
+                <span class="tech-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                <a href="#experience" class="btn btn-secondary">View Work</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section target-section">
+        <div class="container grid-2 reveal">
+            <div class="about-image-wrapper">
+                <div class="image-placeholder main-photo">
+                    <i class="fa-solid fa-microphone-lines placeholder-icon"></i>
+                    <img src="assets/murage.jpg" alt="Dennis Murage speaking" class="about-profile-img">
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-subtitle">About Me</span>
+                <h2>Driven by Scale, Focused on Efficiency</h2>
+                <p>I am a Cloud Engineer with a deep passion for cloud-native ecosystems, automation, and reliability.
+                    Over the years, I've helped organizations transition smoothly into containerized workflows,
+                    establishing robust CI/CD pipelines and highly reliable telemetry.</p>
+                <p>When I'm not configuring clusters or optimizing infrastructure paths, I love speaking at tech
+                    communities, sharing insights via tech blogs, and experimenting with edge runtime environments.</p>
+
+                <div class="social-row">
+                    <a href="https://github.com/murageden" target="_blank" class="social-icon-link"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://ke.linkedin.com/in/murageden" target="_blank" class="social-icon-link"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/d3N0_H" target="_blank" class="social-icon-link"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section target-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <span class="section-subtitle">My Journey</span>
+                <h2>Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Senior Cloud & DevOps Engineer</h3>
+                        <p class="company-name">Safaricom PLC</p>
+                        <p>Leading the migration of core legacy systems into a unified Kubernetes-driven architecture.
+                            Orchestrated seamless blue-green deployments eliminating downtime for millions of active
+                            users.</p>
+                        <div class="skill-pills">
+                            <span class="pill">EKS</span>
+                            <span class="pill">Terraform</span>
+                            <span class="pill">ArgoCD</span>
+                            <span class="pill">Prometheus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Cloud Infrastructure Engineer</h3>
+                        <p class="company-name">Andela</p>
+                        <p>Managed multi-tenant hybrid cloud configurations across AWS and GCP. Designed
+                            high-availability storage configurations and optimized network traffic policies for
+                            microservice mesh architectures.</p>
+                        <div class="skill-pills">
+                            <span class="pill">GCP</span>
+                            <span class="pill">Istio</span>
+                            <span class="pill">Helm</span>
+                            <span class="pill">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog-section target-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Writing</span>
+                <h2>Latest Articles</h2>
+            </div>
+
+            <div class="grid-3">
+                <article class="blog-card glass-card">
+                    <div class="blog-content">
+                        <span class="blog-tag">Kubernetes</span>
+                        <h3>Demystifying K8s Network Policies</h3>
+                        <p>A deep dive into locking down pod communication inside production grade enterprise namespaces
+                            seamlessly.</p>
+                        <a href="#" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card glass-card">
+                    <div class="blog-content">
+                        <span class="blog-tag">DevOps</span>
+                        <h3>GitOps with ArgoCD and Terraform</h3>
+                        <p>How to architect infrastructure and applications using code as the singular declarative
+                            source of truth.</p>
+                        <a href="#" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card glass-card">
+                    <div class="blog-content">
+                        <span class="blog-tag">Cloud</span>
+                        <h3>Optimizing Cloud Spend On AWS</h3>
+                        <p>Actionable metrics and lifecycle definitions engineered to trim compute overhead by up to 40%
+                            safely.</p>
+                        <a href="#" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section target-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2>Let's Build Something Great</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="contact-info-grid">
+                    <div class="glass-card contact-card clickable" data-copy="muragemd@gmail.com">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Me</h4>
+                            <p>muragemd@gmail.com</p>
+                        </div>
+                        <span class="tooltip">Click to copy</span>
+                    </div>
+
+                    <a href="https://ke.linkedin.com/in/murageden" target="_blank" class="glass-card contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/murageden</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/murageden" target="_blank" class="glass-card contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/murageden</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-form-wrapper glass-card">
+                    <form class="contact-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Let's talk about..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-left">
+                <h2 class="footer-logo-huge">DENNIS MURAGE</h2>
+                <p class="footer-credit">&copy;2026</p>
+            </div>
+            <div class="footer-right">
+                <div class="image-placeholder footer-photo">
+                    <i class="fa-solid fa-camera placeholder-icon"></i>
+                    <img src="assets/dennis.jpg" alt="Dennis Murage" class="footer-profile-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="splash.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
