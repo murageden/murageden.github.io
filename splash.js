@@ -9,18 +9,18 @@ function getPalette() {
     if (isDark) {
         // Deep glowing vibrant colors for dark mode context
         return [
-            'rgba(139, 92, 246, ',  // Neon Violet
-            'rgba(20, 184, 166, ',  // Electric Teal
-            'rgba(244, 63, 94, ',   // Deep Coral
-            'rgba(99, 102, 241, '   // Indigo Accent
+            'rgba(15, 23, 42, ',  // Deep charcoal-slate
+            'rgba(248, 250, 252, ',  // High-contrast off-white 
+            'rgba(148, 163, 184, ',   // Soft light-gray
+            'rgba(129, 140, 248, '   // Brightened Indigo Accent
         ];
     } else {
         // High luxury soft watercolor pastel shades for light mode layout
         return [
-            'rgba(167, 139, 250, ', // Violet
-            'rgba(45, 212, 191, ',  // Teal
-            'rgba(253, 186, 116, ', // Peach
-            'rgba(248, 113, 113, '  // Coral
+            'rgba(248, 250, 252, ', // Soft off-white
+            'rgba(15, 23, 42, ',  // Deep slate
+            'rgba(71, 85, 105, ', // Muted gray
+            'rgba(79, 70, 229, '  // Electric Indigo
         ];
     }
 }

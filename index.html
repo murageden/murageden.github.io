@@ -48,7 +48,7 @@
         <div class="hero-content reveal">
             <span class="badge">Available for Opportunities</span>
             <h1>Building Next-Gen <br><span class="text-gradient">Cloud Architecture</span></h1>
-            <p class="hero-lead">Hi, I'm Dennis Murage. I specialize in designing, scaling, and securing
+            <p class="hero-lead">Hello! I am Dennis Murage. I specialize in designing, scaling, and securing
                 high-performance cloud ecosystems and Kubernetes infrastructure.</p>
 
             <div class="tech-badges">
@@ -152,31 +152,35 @@
             <div class="grid-3">
                 <article class="blog-card glass-card">
                     <div class="blog-content">
-                        <span class="blog-tag">Kubernetes</span>
-                        <h3>Demystifying K8s Network Policies</h3>
-                        <p>A deep dive into locking down pod communication inside production grade enterprise namespaces
-                            seamlessly.</p>
-                        <a href="#" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="blog-tag">Design Testing</span>
+                        <h3>Creating Quality User Interface Designs</h3>
+                        <p>A deep dive into the process of designing and testing user interfaces for optimal usability.
+                        </p>
+                        <a href="https://murageden.hashnode.dev/8-tips-for-making-uiux-testing-easier"
+                            class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
                 <article class="blog-card glass-card">
                     <div class="blog-content">
-                        <span class="blog-tag">DevOps</span>
-                        <h3>GitOps with ArgoCD and Terraform</h3>
-                        <p>How to architect infrastructure and applications using code as the singular declarative
-                            source of truth.</p>
-                        <a href="#" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="blog-tag">Work</span>
+                        <h3>Why Work?</h3>
+                        <p>How has the world of work shifted as a result of increased use of Artificial Intelligence
+                            (A.I)
+                            in our daily work schedule?</p>
+                        <a href="https://medium.com/@muragemd/why-work-3d68ca1de0c2" class="blog-link">Read
+                            Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
                 <article class="blog-card glass-card">
                     <div class="blog-content">
-                        <span class="blog-tag">Cloud</span>
-                        <h3>Optimizing Cloud Spend On AWS</h3>
-                        <p>Actionable metrics and lifecycle definitions engineered to trim compute overhead by up to 40%
-                            safely.</p>
-                        <a href="#" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="blog-tag">Startups</span>
+                        <h3>How to Build a Successful Startup</h3>
+                        <p>Have an idea of an App? Did you know that you could build a successful startup right
+                            off of this idea?</p>
+                        <a href="https://murageden.hashnode.dev/the-making-of-an-app" class="blog-link">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -192,20 +196,20 @@
 
             <div class="grid-2">
                 <div class="contact-info-grid">
-                    <div class="glass-card contact-card clickable" data-copy="muragemd@gmail.com">
-                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+
+                    <a href="https://medium.com/@muragemd" target="_blank" class="glass-card contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-medium"></i></div>
                         <div>
-                            <h4>Email Me</h4>
-                            <p>muragemd@gmail.com</p>
+                            <h4>Medium</h4>
+                            <p>@muragemd</p>
                         </div>
-                        <span class="tooltip">Click to copy</span>
-                    </div>
+                    </a>
 
                     <a href="https://ke.linkedin.com/in/murageden" target="_blank" class="glass-card contact-card">
                         <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
                         <div>
                             <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/murageden</p>
+                            <p>@murageden</p>
                         </div>
                     </a>
 
@@ -213,26 +217,31 @@
                         <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
                         <div>
                             <h4>GitHub</h4>
-                            <p>github.com/murageden</p>
+                            <p>@murageden</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="contact-form-wrapper glass-card">
-                    <form class="contact-form" onsubmit="event.preventDefault();">
+                    <form class="contact-form" id="contact-form" autocomplete="on">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" required placeholder="John Doe">
+                            <input type="text" name="fi-sender-fullName" id="name" required placeholder="John Doe">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required placeholder="john@example.com">
+                            <input type="email" name="fi-sender-email" id="email" required
+                                placeholder="john@example.com">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="4" required placeholder="Let's talk about..."></textarea>
+                            <textarea name="fi-text-message" id="message" rows="4" required
+                                placeholder="Let's talk about..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <p id="form-result"></p>
+                        <button type="submit" id="btnSubmit" class="btn btn-primary btn-full">
+                            Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 6px;"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -256,6 +265,25 @@
 
     <script src="splash.js"></script>
     <script src="app.js"></script>
+    <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+    <script>
+        const forminit = new Forminit();
+
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const { data, error } = await forminit.submit('1oh8svyucqd', formData);
+
+            if (error) {
+                document.getElementById('form-result').textContent = error.message;
+                return;
+            }
+
+            document.getElementById('form-result').textContent = 'Message sent!';
+            e.target.reset();
+        });
+    </script>
 </body>
 
 </html>

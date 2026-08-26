@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Dark/Light Theme Switching Engine Architecture ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     const toggleIcon = themeToggleBtn.querySelector('i');
-    
+
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('portfolio-theme', theme);
-        
+
         if (theme === 'dark') {
             toggleIcon.classList.replace('fa-moon', 'fa-sun');
         } else {
@@ -107,13 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             const copyText = card.getAttribute('data-copy');
             const tooltip = card.querySelector('.tooltip');
-            
+
             navigator.clipboard.writeText(copyText).then(() => {
                 if (tooltip) {
                     const originalText = tooltip.innerText;
                     tooltip.innerText = 'Copied!';
                     card.style.borderColor = 'var(--primary-indigo)';
-                    
+
                     setTimeout(() => {
                         tooltip.innerText = originalText;
                         card.style.borderColor = '';

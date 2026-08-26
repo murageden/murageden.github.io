@@ -20,8 +20,8 @@
     --nav-bg: rgba(250, 249, 246, 0.7);
     --badge-bg: rgba(79, 70, 229, 0.08);
 
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Times New Roman', 'Outfit', sans-serif;
+    --font-body: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -237,7 +237,7 @@ h4 {
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, var(--primary-indigo), #ec4899);
+    background: linear-gradient(135deg, var(--primary-indigo), #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -445,7 +445,8 @@ h4 {
     line-height: 1.2;
 }
 
-.about-text p {
+.about-text p,
+#contact-form p {
     color: var(--text-muted-slate);
     margin-bottom: 1.5rem;
 }
@@ -787,7 +788,7 @@ h4 {
 .reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.255s ease, transform 0.255s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.active {
