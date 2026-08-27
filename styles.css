@@ -1,7 +1,7 @@
 /* Color Palette System & Variables */
 :root {
     /* Default Light Mode Settings */
-    --bg-warm-white: HSL(40, 20%, 97%);
+    --bg-warm-white: HSL(100%, 100%, 100%);
     /* #faf9f6 */
     --primary-indigo: HSL(243, 75%, 59%);
     /* #4f46e5 */
@@ -17,7 +17,7 @@
 
     --card-hover-bg: rgba(255, 255, 255, 0.7);
     --input-bg: #ffffff;
-    --nav-bg: rgba(250, 249, 246, 0.7);
+    --nav-bg: rgba(255, 255, 255, 0.7);
     --badge-bg: rgba(79, 70, 229, 0.08);
 
     --font-heading: 'Times New Roman', 'Outfit', sans-serif;
@@ -127,14 +127,14 @@ body {
     background: var(--nav-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom: 1px solid #ddd;
     transition: background 0.5s ease;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.2rem 2rem;
+    padding: 0.945rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,7 +269,7 @@ h4 {
     padding: 0.8rem 2rem;
     font-family: var(--font-body);
     font-weight: 600;
-    border-radius: 12px;
+    border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition-smooth);
