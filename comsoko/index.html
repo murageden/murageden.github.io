@@ -113,9 +113,151 @@
             gap: 1rem;
         }
 
+        /* Live Preview / App Interface Demo */
+        .preview-section {
+            padding: 4rem 5%;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .preview-section h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .preview-section p {
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .dashboard-mockup {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #E0E0E0;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            background: #FAFAFA;
+            text-align: left;
+        }
+
+        .mockup-header {
+            background: var(--dark);
+            color: var(--white);
+            padding: 0.8rem 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .mockup-dots span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+
+        .dot-red {
+            background: #FF5F56;
+        }
+
+        .dot-yellow {
+            background: #FFBD2E;
+        }
+
+        .dot-green {
+            background: #27C93F;
+        }
+
+        .mockup-body {
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .pool-card {
+            background: var(--white);
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .pool-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .pool-title {
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .pool-badge {
+            background: #E8F5E9;
+            color: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .progress-bar-bg {
+            background: #E2E8F0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0.8rem 0;
+        }
+
+        .progress-bar-fill {
+            background: var(--primary);
+            height: 100%;
+            width: 78%;
+            border-radius: 5px;
+        }
+
+        .pool-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .side-panel {
+            background: var(--white);
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 1.2rem;
+        }
+
+        .side-panel h4 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: var(--dark);
+        }
+
+        .stat-item {
+            margin-bottom: 1rem;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
         /* Interactive Calculator */
         .calculator-section {
-            padding: 3rem 5%;
+            padding: 4rem 5%;
             background: var(--light);
             text-align: center;
         }
@@ -245,6 +387,10 @@
             .hero-ctas {
                 flex-direction: column;
             }
+
+            .mockup-body {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -255,6 +401,7 @@
         <div class="logo">Com<span>Soko</span></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#preview">Platform Preview</a></li>
             <li><a href="#calculator">Savings Calculator</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -271,6 +418,71 @@
         </div>
     </section>
 
+    <section class="preview-section" id="preview">
+        <h2>Live Platform Preview</h2>
+        <p>Take a look at how real-time buying pools aggregate orders across Kenya’s sub-counties.</p>
+
+        <div class="dashboard-mockup">
+            <div class="mockup-header">
+                <div class="mockup-dots">
+                    <span class="dot-red"></span>
+                    <span class="dot-yellow"></span>
+                    <span class="dot-green"></span>
+                </div>
+                <div>ComSoko Retailer Portal — Naivasha Sub-County Pool</div>
+                <div>USSD: *789#</div>
+            </div>
+            <div class="mockup-body">
+                <div>
+                    <div class="pool-card">
+                        <div class="pool-header">
+                            <span class="pool-title">Ungwa Flour & Maize Meal Pool #402</span>
+                            <span class="pool-badge">78% Filled</span>
+                        </div>
+                        <p style="font-size: 0.85rem; color: #555;">Supplier: Unga Limited Wholesale Hub</p>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"></div>
+                        </div>
+                        <div class="pool-stats">
+                            <span>Target: 500 Bags (10 Tons)</span>
+                            <span>Closing in: 14 hrs</span>
+                        </div>
+                    </div>
+                    <div class="pool-card">
+                        <div class="pool-header">
+                            <span class="pool-title">Cooking Oil & FMCG Aggregate #109</span>
+                            <span class="pool-badge" style="background: #FFF3E0; color: #E65100;">45% Filled</span>
+                        </div>
+                        <p style="font-size: 0.85rem; color: #555;">Supplier: Bidco Africa Direct</p>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 45%; background: #FB8C00;"></div>
+                        </div>
+                        <div class="pool-stats">
+                            <span>Target: 200 Cartons</span>
+                            <span>Closing in: 2 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-panel">
+                    <h4>Your Active Pool Status</h4>
+                    <div class="stat-item">
+                        <div class="stat-label">Your Reserved Stock</div>
+                        <div class="stat-value">KSh 32,500</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Estimated Delivery Discount</div>
+                        <div class="stat-value" style="color: #27C93F;">-KSh 4,200</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Escrow Status (M-Pesa)</div>
+                        <div class="stat-value" style="font-size: 0.95rem; color: #555;">Secured (Pending Hub Dispatch)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="calculator-section" id="calculator">
         <h2>Estimate Your Monthly Savings</h2>
         <div class="calc-card">
@@ -284,7 +496,7 @@
             </div>
             <button class="btn btn-primary" style="width: 100%;" onclick="calculateSavings()">Calculate Savings</button>
             <div class="calc-result" id="result">
-                Estimated Savings: KSh 10,500 / month
+                Estimated Savings: KSh 11,500 / month
             </div>
         </div>
     </section>
